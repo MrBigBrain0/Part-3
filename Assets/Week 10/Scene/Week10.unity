@@ -738,7 +738,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1446017583}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 60
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2006,7 +2006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropdown: {fileID: 1220868479}
   sr: {fileID: 1940316183}
-  start: {r: 0.07957244, g: 1, b: 0, a: 1}
+  start: {r: 0, g: 0.8927541, b: 1, a: 1}
   end: {r: 0.5862112, g: 0, b: 1, a: 1}
 --- !u!4 &1847005984
 Transform:
@@ -2164,19 +2164,7 @@ MonoBehaviour:
   m_Value: 60
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1847005983}
-        m_TargetAssemblyTypeName: Demo, Assembly-CSharp
-        m_MethodName: SliderValueHasChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1878641280
 MonoBehaviour:
   m_ObjectHideFlags: 0
