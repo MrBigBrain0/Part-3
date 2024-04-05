@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +6,13 @@ using UnityEngine;
 public class PlanetControler : MonoBehaviour
 {
 
-    public static PlanetControler instance;
+    public static PlanetControler Instance;
     public static Planets CurrentPlanet { get; private set; }
 
+    //setting up the controler
     public static void setCurrentPlanet(Planets planet)
     {
+        //telling the programing how to identiy a current planet
         if(CurrentPlanet != null)
         {
             CurrentPlanet.Current(false);
@@ -21,6 +24,7 @@ public class PlanetControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        //allows instance to be called from any class.
+        Instance = this;
     }
 }
