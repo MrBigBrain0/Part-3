@@ -5,36 +5,31 @@ using UnityEngine;
 
 public class Planets : MonoBehaviour
 {
-    public GameObject Planet;
-    public Vector3 startPosition;
-    public Vector3 endPosition;
+    protected Vector3 startPosition;
+    protected Vector3 endPosition;
 
-    public float timer;
-    bool ClickOnPlanet;
-    bool isCurrent;
+    protected float timer;
+    protected bool ClickOnPlanet;
+    protected bool isCurrent;
 
     public void Current(bool value)
     {
         isCurrent = value;
     }
-    private void OnMouseDown()
+
+    public virtual void OnMouseDown()
     {
         PlanetControler.setCurrentPlanet(this);
         ClickOnPlanet = true;
     }
-    private void OnMouseUp()
+
+    public virtual void Update()
     {
-        ClickOnPlanet = false;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        timer += Time.deltaTime;
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void OnMouseUp()
     {
-        
+        ClickOnPlanet = false;
     }
 }
