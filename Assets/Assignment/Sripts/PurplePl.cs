@@ -6,8 +6,8 @@ using UnityEngine;
 public class PurplePl : Planets
 {
     //vector 3 for the lerp animation
-    private Vector3 startPosition = new Vector3(-2, 3, 0);
-    private Vector3 endPosition = new Vector3(-2, -3, 0);
+    private Vector3 startPosition = new Vector3(8, 3, 0);
+    private Vector3 endPosition = new Vector3(8, -3, 0);
     public float desiredTime = 3f;
     //bool variable to call the Ienumerator
     public bool move = false;
